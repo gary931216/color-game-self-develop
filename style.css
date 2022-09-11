@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+/* 初始化 */
+body {
+    margin: 0;
+}
+
+/* container */
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* start */
+
+.commentary{
+    width: 100%;
+    height: 100%;
+    background-color: #f06060;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: 1s;
+}
+.commentary.starting {
+    top: -100%;
+    opacity: .3;
+    transition: 1s;
+}
+
+/* 最高分 */
+
+.heightest-score-div {
+    background-color: #ececec;
+}
+.heightest-score-div p {
+    text-align: center;
+    margin: 10px 0;
+}
+.heightest-score-div i {
+    text-align: center;
+    font-size: 80px;
+}
+
+.heightest-score-icon span {
+    font-size: 80px;
+}
+
+.heightest-score {
+    font-size: 60px;
+}
+
+.title{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title h1 {
+    width: 100%;
+    margin: 90px 0;
+    text-align: center;
+    font-size: 50px;
+}
+
+.title p {
+    width: 100%;
+
+    font-size: 40px;
+    text-align: center;
+}
+
+.start_div {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.start {
+    padding: 20px;
+    display: inline-block;
+    background-color: rgb(228, 228, 95);
+    margin: 0 auto;
+    margin-top: 150px;
+    font-size: 50px;
+    font-weight: 700;
+    border: 1px black solid;
+    border-radius: 30px;
+}
+
+.end_score {
+    font-family: 'Outfit', sans-serif;
+    width: 150px;
+    position: absolute;
+    color: white;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    top: 0;
+    left: calc(50% - 75px);
+}
+/* game */
+
+.game {
+    width: 100%;
+    height: 100%;
+    background-color: wheat;
+}
+
+.game header {
+    width: 100%;
+    height: 100px;
+}
+
+.timer {
+    color: rgb(129, 129, 94);
+    font-size: 60px;
+    text-align: center;
+    padding: 21px 0;
+}
+
+.score {
+    color: rgb(83, 83, 68);
+    font-size: 50px;
+    text-align: center;
+    padding: 21px 0;
+}
+.game main {
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+}
+
+.game-space {
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    margin: auto;
+    background-color: cornsilk;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fake {
+    width: calc(calc(100% / 2) - 5px);
+    height: calc(calc(100% / 2) - 5px);
+    background-color: rgb(129, 129, 94);
+    border-radius: 10px;
+}
